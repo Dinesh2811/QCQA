@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537532161239",
+    "project_id": "agna-project",
+    "storage_bucket": "agna-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537532161239:android:7961925a331fe10721e492",
+        "android_client_info": {
+          "package_name": "com.dinesh.qcqa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537532161239-3gjbi51m5vgi5t4ald3pbolsar1vcrh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsV_JNllZgDR3nGtaZ6Jf2myFfANtsVwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537532161239-3gjbi51m5vgi5t4ald3pbolsar1vcrh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

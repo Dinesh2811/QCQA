@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QCQA v1.0</string>
+    <string name="navigation_drawer_open">Navigation drawer open</string>
+    <string name="navigation_drawer_close">Navigation drawer close</string>
+
+
+    <string name="buy_now">Buy Now</string>
+</resources>

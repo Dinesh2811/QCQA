@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/co"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/order_product_img"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/laptop_1" />
+
+    <TextView
+        android:id="@+id/order_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:text="Laptop MSI GE66 Raider 10SF 483VN Dragon shield Limited Edition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/order_product_img"
+        app:layout_constraintTop_toTopOf="@+id/order_product_img" />
+
+    <TextView
+        android:id="@+id/order_product_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rs 49,999"
+        app:layout_constraintStart_toStartOf="@+id/order_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/order_product_name" />
+
+    <TextView
+        android:id="@+id/order_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="10% off"
+        app:layout_constraintBottom_toBottomOf="@+id/order_product_discount"
+        app:layout_constraintStart_toEndOf="@+id/order_product_discount" />
+
+    <TextView
+        android:id="@+id/order_product_in_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="In Stock"
+        app:layout_constraintStart_toStartOf="@+id/order_product_discount"
+        app:layout_constraintTop_toBottomOf="@+id/order_product_discount" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/order_product_img"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Quantity"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_order_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_order_minus" />
+
+    <ImageButton
+        android:id="@+id/btn_order_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_add" />
+
+    <EditText
+        android:id="@+id/edt_order_quantity"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/order_quantity_border"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_order_plus"
+        app:layout_constraintEnd_toStartOf="@+id/btn_order_plus"
+        app:layout_constraintTop_toTopOf="@+id/btn_order_plus" />
+
+    <ImageButton
+        android:id="@+id/btn_order_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_order_quantity"
+        app:layout_constraintEnd_toStartOf="@+id/edt_order_quantity"
+        app:layout_constraintTop_toTopOf="@+id/edt_order_quantity"
+        app:srcCompat="@drawable/ic_minus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
